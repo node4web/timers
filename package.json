@@ -1,53 +1,69 @@
 {
-  "author": "J. Ryan Stinnett <jryans@gmail.com> (https://convolv.es/)",
-  "name": "timers-browserify",
-  "description": "timers module for browserify",
-  "version": "2.0.12",
-  "homepage": "https://github.com/jryans/timers-browserify",
-  "bugs": "https://github.com/jryans/timers-browserify/issues",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jryans/timers-browserify.git"
-  },
-  "contributors": [
-    "Colton Brown <coltonTB@me.com>",
-    "Dario Segura <dario.seco@gmail.com>",
-    "Guy Bedford <guybedford@gmail.com>",
-    "Ionut-Cristian Florescu <ionut.florescu@gmail.com>",
-    "James Halliday <mail@substack.net>",
-    "Jan Schär <jscissr@gmail.com>",
-    "Johannes Ewald <johannes.ewald@peerigon.com>",
-    "Jonathan Prins <jon@blip.tv>",
-    "Matt Esch <matt@mattesch.info>",
-    "Renée Kooi <renee@kooi.me>",
-    "Simon Meusel <info@simonmeusel.de>",
-    "taoqf <tao_qiufeng@126.com>",
-    "Thiago Felix <thiago@thiagofelix.com>",
-    "wtgtybhertgeghgtwtg <wtgtybhertgeghgtwtg@gmail.com>"
-  ],
-  "main": "main.js",
-  "dependencies": {
-    "setimmediate": "^1.0.4"
+  "name": "@nodefill/timers",
+  "description": "⏱ node:timers for anywhere!",
+  "version": "0.1.0",
+  "homepage": "https://nodefill.github.io/timers/",
+  "bugs": "https://github.com/nodefill/timers/issues",
+  "repository": "github:nodefill/timers",
+  "contributors": [],
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "node": "./dist/index-node.js",
+      "default": "./dist/index-default.js"
+    },
+    "./promises": {
+      "node": "./dist/promises/index-node.js",
+      "default": "./dist/promises/index-default.js"
+    },
+    "./setImmediate.js": {
+      "node": "./dist/setImmediate-node.js",
+      "default": "./dist/setImmediate-default.js"
+    },
+    "./setInterval.js": {
+      "node": "./dist/setInterval-node.js",
+      "default": "./dist/setInterval-default.js"
+    },
+    "./setTimeout.js": {
+      "node": "./dist/setTimeout-node.js",
+      "default": "./dist/setTimeout-default.js"
+    },
+    "./clearImmediate.js": {
+      "node": "./dist/clearImmediate-node.js",
+      "default": "./dist/clearImmediate-default.js"
+    },
+    "./clearInterval.js": {
+      "node": "./dist/clearInterval-node.js",
+      "default": "./dist/clearInterval-default.js"
+    },
+    "./clearTimeout.js": {
+      "node": "./dist/clearTimeout-node.js",
+      "default": "./dist/clearTimeout-default.js"
+    },
+    "./promises/setTimeout.js": {
+      "node": "./dist/promises/setTimeout-node.js",
+      "default": "./dist/promises/setTimeout-default.js"
+    },
+    "./promises/setImmediate.js": {
+      "node": "./dist/promises/setImmediate-node.js",
+      "default": "./dist/promises/setImmediate-default.js"
+    },
+    "./promises/setInterval.js": {
+      "node": "./dist/promises/setInterval-node.js",
+      "default": "./dist/promises/setInterval-default.js"
+    },
+    "./promises/scheduler.js": {
+      "node": "./dist/promises/scheduler-node.js",
+      "default": "./dist/promises/scheduler-default.js"
+    },
+    "./lib/*": null,
+    "./*.js": "./dist/*.js"
   },
   "devDependencies": {
-    "browserify": "~1.10.16",
-    "connect": "~2.30.2"
-  },
-  "optionalDependencies": {},
-  "engines": {
-    "node": ">=0.6.0"
-  },
-  "keywords": [
-    "timers",
-    "browserify",
-    "browser"
-  ],
-  "license": "MIT",
-  "jspm": {
-    "map": {
-      "./main.js": {
-        "node": "@node/timers"
-      }
-    }
+    "@types/node": "^20.4.8",
+    "prettier": "^3.0.1",
+    "typedoc": "^0.24.8",
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.1"
   }
 }
